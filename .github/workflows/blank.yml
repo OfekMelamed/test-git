@@ -1,0 +1,21 @@
+name: My First Workflow
+
+on:
+  push:
+    branches: [ "main" ]
+  workflow_dispatch:
+
+jobs:
+  job-1:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Say Hello
+        run: echo "Hello World!!!"
+      
+      - name: Multiline Command
+        run: |
+          ls -la
+          pwd
+          echo "HI !"
+      
+      - uses: actions/checkout@v3
