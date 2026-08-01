@@ -51,4 +51,4 @@ jobs:
           LAST_NAME: "Melamed"
       
       - name: Print Phone Number
-        run: echo "Phone - ${{ secrets.PHONE_NUMBER }}" 
+        run: echo "Phone - ${{ secrets.PHONE_NUMBER }}"
