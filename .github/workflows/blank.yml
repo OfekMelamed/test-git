@@ -44,8 +44,6 @@ jobs:
           pwd
           echo "VAR-1 = ${{ env.VAR1 }}"
           echo "VAR-2 = ${{ env.VAR2 }}"
-          echo "App name: ${{ env.APP_NAME }}, owned by ${{ env.OWNER }}"
-
-      - uses: actions/checkout@v4
+          echo "App name: ${{ env.APP_NAME }}, owned by ${{ env.OWNER }}" >> actions.txt
 
       - run: ls -la
