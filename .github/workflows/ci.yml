@@ -1,0 +1,16 @@
+name: CI Pipeline
+
+on:
+  push:
+    branches: [ "main" ]
+  pull_request:
+    branches: [ "main" ]
+jobs:
+  test:
+    - uses: actions/checkout@v4
+
+    - name: Check files exist
+      run: |
+        ls -la
+        cat 1.txt
+        cat 2.txt
