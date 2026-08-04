@@ -15,4 +15,9 @@ jobs:
           ls -la
           cat 1.txt
           cat 2.txt
+      - name: Save file as artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: my-files
+          path: 1.txt
           
